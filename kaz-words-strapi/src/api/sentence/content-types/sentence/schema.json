@@ -11,7 +11,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "sentence": {
+    "kz_sentence": {
       "type": "string",
       "required": true
     },
@@ -20,6 +20,9 @@
       "relation": "manyToMany",
       "target": "api::word.word",
       "inversedBy": "sentences"
+    },
+    "ru_sentence": {
+      "type": "string"
     }
   }
 }
