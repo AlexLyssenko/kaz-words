@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sentences",
+  "info": {
+    "singularName": "sentence",
+    "pluralName": "sentences",
+    "displayName": "Sentence"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sentence": {
+      "type": "string",
+      "required": true
+    },
+    "words": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::word.word",
+      "inversedBy": "sentences"
+    }
+  }
+}
