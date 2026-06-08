@@ -27,6 +27,9 @@
     "ru_word": {
       "type": "string",
       "required": true
+    },
+    "isPliral": {
+      "type": "string"
     }
   }
 }
